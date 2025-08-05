@@ -22,20 +22,85 @@
         }
         // console.log(obeject);
         class Obeject1{
-            id = "12334";
-            author= {userID: "uriie",name: "john Doe", profilePicture: "https://url.net/123/pic.jpg"};
-            content = {mediaTyep: "image", mediaURL: "https://wwww.", mediaType: "video", "mediaURl": "https://"};
-            engegements = [{likes: 254}, {loves: 34}, {haha: 67}];
-            comments = [{commentID: "c767", userID: "uytu", text: "Gojasi wa kwathu", timestamp: "2025/08/04:16:00z"},
-            {commentID: "c768", userID: "yyytywe", text: "Looking great ma dear", timestamp: "2025-08-04T09:15:00z"}];
-            privacy = "public";
-            createdAt = "2025-08-04T08:30:00z";
-            updatedAt = "2025-08-04T09:00:00z";
-            tags = ["Alice Wawukali", "Jame wantali", "Peter Woyera"];
             
+            constructor ( id = "12334",
+            author = { userID: "uriie", name: "john Doe", profilePicture: "https://url.net/123/pic.jpg"},
+            content = {mediaTyep: "image", mediaURL: "https://wwww.", mediaType: "video", "mediaURl": "https://"},
+            engegements = [{likes: 254}, {loves: 34}, {haha: 67}],
+            comments = [{commentID: "c767", userID: "uytu", text: "Gojasi wa kwathu", timestamp: "2025/08/04:16:00z"},
+            {commentID: "c768", userID: "yyytywe", text: "Looking great ma dear", timestamp: "2025-08-04T09:15:00z"}],
+            privacy = "public",
+            createdAt = "2025-08-04T08:30:00z",
+            updatedAt = "2025-08-04T09:00:00z",
+            tags = ["Alice Wawukali", "Jame wantali", "Peter Woyera"]
+            ){
+                this.id = id;
+                this.author = author;
+                this.comments = comments;
+                this.engegements = engegements;
+                this.privacy = privacy;
+                this.content = content;
+                this.tags = tags;
+                this.createdAt = createdAt;
+                this.updatedAt = updatedAt;
+            }
 
+        };
+        
+      function obj ( id = "12334",
+            author = { userID: "uriie", name: "john Doe", profilePicture: "https://url.net/123/pic.jpg"},
+            content = {mediaTyep: "image", mediaURL: "https://wwww.", mediaType: "video", "mediaURl": "https://"},
+            engegements = [{likes: 254}, {loves: 34}, {haha: 67}],
+            comments = [{commentID: "c767", userID: "uytu", text: "Gojasi wa kwathu", timestamp: "2025/08/04:16:00z"},
+            {commentID: "c768", userID: "yyytywe", text: "Looking great ma dear", timestamp: "2025-08-04T09:15:00z"}],
+            privacy = "public",
+            createdAt = "2025-08-04T08:30:00z",
+            updatedAt = "2025-08-04T09:00:00z",
+            tags = ["Alice Wawukali", "Jame wantali", "Peter Woyera"]
+            ){
+                this.id = id;
+                this.author = author;
+                this.comments = comments;
+                this.engegements = engegements;
+                this.privacy = privacy;
+                this.content = content;
+                this.tags = tags;
+                this.createdAt = createdAt;
+                this.updatedAt = updatedAt;
+
+                  
+                this.display  = function (){
+                console.log(`${this.id}`);
+
+            }
+            }
+
+
+          
+
+        
+    // let student = new obj();
+    // student.display();
+    let s = new Obeject1();
+    // let st = {commentID: "21", userID: "uytu", text: "Gojasi wa kwathu", timestamp: "2025/08/04:16:00z"}
+    // s.comments.push(st);
+    // console.log(s.comments);
+    // let json = JSON.stringify(obeject);
+
+    // let ob = JSON.parse(json);
+
+    // console.log(json);
+
+    // console.log(ob);
+    for(let ob of engegements){
+        if('likes' in ob){
+            ob.likes += 1;
+            break;
         }
-        constructor()
+    }
+    console.log(s.engegements);
+
+
     </script>
 </body>
 </html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Background Changer</title>
+</head>
+<body>
+  <h1>Watch the background change every 5 seconds!</h1>
+
+  <script>
+    const colors = ["lightblue", "lightgreen", "lightcoral", "lavender", "khaki", "peachpuff"];
+    let index = 0;
+
+    setInterval(() => {
+      document.body.style.backgroundColor = colors[index];
+      index = (index + 1) % colors.length; // loop back to 0 when end is reached
+    }, 5000);
+  </script>
+</body>
+</html>
