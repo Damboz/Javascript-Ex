@@ -1,5 +1,5 @@
 const m = document.getElementById("h1");
 m.textContent = "The polytechnic";
 
-const p = document.getElementsByName("p");
-p.textContent = "The mothe of all unirvesties in Malawi";
+const p1 = document.getElementByTagName("p")
+p1.textContent = "The mothe of all unirvesties in Malawi";
