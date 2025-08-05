@@ -7,17 +7,13 @@
 </head>
 <body>
     <script>
-        let i = 0;
-        while(i < 20){
-            console.log(i);
-            i++;
-            if(i === 6){
-                continue;
-            }
-            else if (i === 10){
-                break;
-            }
+        const hypotenuse = (a, o) =>{
+            let result = (b*b)+(o*o);
+            return Math.sqrt(result);
+
         }
+        console.log(hypotenuse(6,9));
+
     </script>
 </body>
 </html>
